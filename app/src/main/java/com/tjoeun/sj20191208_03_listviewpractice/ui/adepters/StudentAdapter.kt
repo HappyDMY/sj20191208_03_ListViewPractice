@@ -27,11 +27,11 @@ class StudentAdapter(context:Context, resId:Int, list:ArrayList<User>):ArrayAdap
             tempRow = inf.inflate(R.layout.student_list_item, null)
 
         }
-        val row = tempRow!!
+        var row = tempRow!!
 
         val data = mList.get(position)
         val studentNameTxt = row.findViewById<TextView>(R.id.studentNameTxt)
-        val studentAddressTxt = row.findViewById<TextView>(R.id.studentNameTxt)
+        val studentAddressTxt = row.findViewById<TextView>(R.id.studentAddressTxt)
         studentNameTxt.text= data.name
         studentAddressTxt.text= data.address
 
