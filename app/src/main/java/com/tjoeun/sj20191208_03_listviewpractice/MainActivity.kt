@@ -15,6 +15,12 @@ class MainActivity : AppCompatActivity() {
         val tempUser = User("계석준","서울시도봉구", false)
         Log.d("사용자 주소", tempUser.address)
 
+        val tempUser2 = User()
+        Log.d("사용자 주소", tempUser2.address)
+
+        val tempUser3 = User()
+        Log.d("사용자주소", "아이유")
+
 
     }
 }
