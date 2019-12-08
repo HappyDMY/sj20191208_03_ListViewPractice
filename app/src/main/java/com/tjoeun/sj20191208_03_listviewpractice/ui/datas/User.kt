@@ -16,7 +16,7 @@ class User (inputName:String, inputAddres:String, isWomenOk:Boolean){
     constructor(name:String) : this(name, "거주지만 모름", true)
 
     fun printUserInfo(){
-        Log.d("사용자 정보","이름: ${name} , 거주지: ${address}")
+        Log.d("사용자 정보","이름: ${name}, 거주지: ${address}, 여성인가? ${isWomen}")
     }
 
 }
