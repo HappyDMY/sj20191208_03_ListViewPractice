@@ -24,14 +24,14 @@ class StudentAdapter(context:Context, resId:Int, list:ArrayList<User>):ArrayAdap
 
             Log.d("새로 뷰 그리기", "inflate 실행됨")
 
-            tempRow = inf.inflate(R.layout.user_list_item, null)
+            tempRow = inf.inflate(R.layout.student_list_item, null)
 
         }
-        var row = tempRow!!
+        val row = tempRow!!
 
         val data = mList.get(position)
         val studentNameTxt = row.findViewById<TextView>(R.id.studentNameTxt)
-        val studentAddressTxt = row.findViewById<TextView>(R.id.userAddressTxt)
+        val studentAddressTxt = row.findViewById<TextView>(R.id.studentNameTxt)
         studentNameTxt.text= data.name
         studentAddressTxt.text= data.address
 
