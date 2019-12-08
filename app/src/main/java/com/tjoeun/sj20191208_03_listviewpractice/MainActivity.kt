@@ -65,7 +65,6 @@ class MainActivity : AppCompatActivity() {
         secondStudentList.add(User("나","서울시 도봉구 ",  false))
     }
 
-
 //        val tempUser = User("계석준","서울시도봉구", false)
 //        Log.d("사용자 주소", tempUser.address)
 //
